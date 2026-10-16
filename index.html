@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <link rel="stylesheet" href="html.html">
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: gray;
+            padding: 10px;
+
+        }
+
+
+        .links {
+            display: flex;
+            gap: 30px;
+            text-align: end;
+            font-size: 25px;
+            padding: 19px;
+        }
+
+
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 30px;
+        }
+
+        .card {
+            display: inline-block;
+            padding: 20px;
+            background-color: whitesmoke;
+            width: 180px;
+            height: 150px;
+            top: 50px;
+
+
+        }
+
+        button {
+            background-color: lightpink;
+            padding: 5px;
+
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+
+        }
+
+
+
+        @media(max-width:378px) {
+            nav {
+                display: inline-block;
+                background-color: gray;
+                width: 325px;
+            }
+
+            h2 {
+                text-align: center;
+                color: black;
+            }
+
+            .links {
+                position: relative;
+                left: 10px;
+                font-size: 21px;
+                text-align: center;
+
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column-reverse;
+                margin-left: 30px;
+            }
+
+            .card {
+                display: block;
+                background-color: whitesmoke;
+                height: 125px;
+            }
+
+            button {
+                background-color: lightpink;
+                border-radius: 5px;
+            }
+
+            button:hover {
+                background-color: whitesmoke;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2>My site</h2>
+
+        <div class="links">
+            <span><a href="index.html">Home</a></span>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="cards">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Structure of a website.</p>
+            <button><a href="./html.html">Learn</a></button>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Desing and layout.</p>
+            <button><a href="./css.html">Learn</a></button>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Website interaction.</p>
+            <button><a href="./js.html">Learn</a></button>
+        </div>
+
+    </div>
+</body>
+
+</html>

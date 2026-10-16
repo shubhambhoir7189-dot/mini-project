@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Link</title>
+    <style>
+         header{
+            text-align: center;
+            background-color: rgb(181, 218, 241);
+            padding: 3px;
+        }
+
+        .center{
+            display: flex;
+            justify-content: center;
+        }
+
+        .topics{
+            display: inline-block;
+            background-color: rgb(135, 205, 226);
+            width: 1900px;
+            margin-left: 2px;
+            margin-top: 15px;
+            padding-left: 10px;
+        
+        }
+
+        .selector{
+             font-size: 18px;
+        }
+        .colors{
+            font-size: 18px;
+        }
+        .combinators{
+            font-size: 18px;
+        }
+
+        .home{
+           display: flex;
+           justify-content: end;
+        }
+
+        a{
+           display: flex;
+           justify-content: center;
+           background-color: rgb(134, 208, 226);
+           margin-top: 8px;
+           padding: 10px;
+           color: white;
+        }
+
+        a:hover{
+            background-color: skyblue;
+        }
+
+        @media(max-width:378px) {
+             header{
+            text-align: center;
+            background-color: rgb(181, 218, 241);
+            padding: 3px;
+        }
+
+        .center{
+            display: flex;
+            justify-content: center;
+        }
+
+        .topics{
+            display: inline-block;
+            background-color: rgb(135, 205, 226);
+            width: 1900px;
+            margin-left: 2px;
+            margin-top: 15px;
+            padding-left: 10px;
+        
+        }
+
+        .selector{
+             font-size: 17px;
+        }
+        .colors{
+            font-size: 17px;
+        }
+        .combinators{
+            font-size: 17px;
+        }
+
+        .home{
+           display: flex;
+           justify-content: end;
+        }
+
+        a{
+           display: flex;
+           justify-content: center;
+           background-color: rgb(134, 208, 226);
+           margin-top: 8px;
+           padding: 10px;
+           color: white;
+        }
+
+        a:hover{
+            background-color: skyblue;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS</h1>
+    </header>
+
+    <div class="center">
+        <div class="topics">
+         <p><h2>CSS Topics.</h2></p>
+    <ul>
+       <div class="selector">
+        <details>
+        <summary>CSS Selectors</summary>
+       <p>CSS selectors are used to "find" (or select) the HTML elements you want to style. </p>
+       <h3>CSS Simple Selectors</h3>
+       <p>The simple selectors select elements based on element-name, id, and class. In addition, there is the universal selector (*). </p>
+       
+       </details>
+       </div>
+        
+       <div class="colors">
+        <details>
+            <summary>CSS Colors</summary>
+           <p><h4>Color Names supported by All Browser</h4></p>
+           <p>All modern browser support 140 color names.</p>
+           <h3>Example</h3>
+           <!DOCTYPE html>
+           <html lang="en">
+           <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           </head>
+           <style>
+
+           </style>
+           <body>
+                <h1>Colors can be set using color names.</h1>
+
+                <div style="background-color: lightcoral;">
+                    <h1 style="color: lightyellow;">Heading</h1>
+                </div>
+
+                <div style="background-color: rgb(134, 165, 72);">
+                    <h1 style="color: lightyellow;">Heading</h1>
+                </div>
+
+                <div style="background-color: lightseagreen;">
+                    <h1 style="color: lightyellow;">Heading</h1>
+                </div>
+                
+           </body>
+           </html>
+        </details>
+       </div>
+
+       <div class="combinators">
+        <details>
+            <summary>CSS Combinators</summary>
+            <p>A combinator is a sign that explains the relationship between seectors.</p>
+            <p>The list below shows the name and sign different combinators in CSS:</p>
+
+           <ol>
+            <li>Child combinator sign (>). </li>
+            <li>Descendant combinator sign (single space). </li>
+            <li>Next-sibling combinator sign(+). </li>
+            <li>Selector list sign (,). </li>
+           </ol>
+        </details>
+       </div>
+        
+    </ul>
+    </div>
+    </div>
+    <span class="home"><a href="index.html">Go To Home Page</a></span>
+</body>
+</html>

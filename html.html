@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Link</title>
+    <style>
+        header{
+            text-align: center;
+            background-color: #91BCE9;
+            padding: 3px;
+        }
+        
+        .center{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .topics{
+            display: inline-block;
+            background-color: #B8D5F2;
+            width: 1900px;
+            margin-left: 2px;
+            margin-top: 15px;
+            padding-left: 10px;
+        }
+
+        .basics{
+            font-size: 18px;
+            
+        }
+        .paragraph{
+            font-size: 18px;
+        }
+
+        .list{
+            font-size: 18px;
+        }
+
+        .media{
+            font-size: 18px;
+        }
+
+        .home{
+           display: flex;
+           justify-content: end;
+        }
+        
+        a{
+           background-color: #91BCE9;
+           margin-top: 8px;
+           padding: 10px;
+           color: white;
+        }
+
+        a:hover{
+            background-color: skyblue;
+        }
+        
+
+         @media(max-width:378px) {
+             header{
+            text-align: center;
+            background-color: #91BCE9;
+            padding: 3px;
+        }
+        
+        .center{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .topics{
+            display: inline-block;
+            background-color: #B8D5F2;
+            width: 1900px;
+            margin-left: 2px;
+            margin-top: 15px;
+            padding-left: 10px;
+        }
+
+        .basics{
+            font-size: 17px;
+            
+        }
+        .paragraph{
+            font-size: 17px;
+        }
+
+        .list{
+            font-size: 17px;
+        }
+
+        .media{
+            font-size: 17px;
+        }
+        
+         .home{
+           display: flex;
+           justify-content: end;
+        }
+
+        a{
+           background-color: #91BCE9;
+           margin-top: 8px;
+           padding: 10px;
+           color: white;
+        }
+
+        a:hover{
+            background-color: skyblue;
+        }
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML</h1>
+    </header>
+
+    <div class="center">
+        <div class="topics">
+         <p><h2>HTML Topics.</h2></p>
+    <ul>
+       <div class="basics">
+        <details>
+        <summary>HTML Basics</summary>
+       <p>This is a single paragraph, but we are going to <br> break it onto two lines. <br></p>
+       </details>
+       </div>
+        
+       <div class="paragraph">
+        <details>
+            <summary>HTML Paragraph</summary>
+           <p>HTML stands for Hyper Text Markup Language.</p>
+           <p>HTML is use to creat and structure webpage.</p>
+           Important Points :
+           <ol type="1">
+            <li>The (p) tag defines a paragraph.</li>
+            <li>It has an opening tag (p) and a closing tag (/p).</li>
+            <li>Multiple paragraph can be written using multiple (p) tags.</li>
+            <li>A browser automatically starts a new line for each paragraph.</li>
+            <li>Paragraph make long text more organized and readable.</li>
+            <ul>
+            <p>In short: the (p) tag is used to creat and display paragraph of text in an HTML web page.</p>
+            </ul>
+           </ol>
+           
+        </details>
+       </div>
+
+       <div class="list">
+        <details>
+            <summary>HTML Lists</summary>
+            <h3>Attributes</h3>
+            <p>This integer attribute indicate the current ordinal value of the list item as defined by the (ol) element. The only allowed value for this attribute is a number, even if the list is displayed with Roman numerals or letters. List items that follow this one continue numbering from the value set. This attribute has no meaning for unordered list (ul) or for menus (menu).</p>
+            This character attribute indicates the numbering type:
+            <ul>
+                <li>a:lowercase letters</li>
+                <li>A:uppercase letters</li>
+                <li>i:lowercase Roman numerals</li>
+                <li>I:uppercase Roman numerals</li>
+                <li>1:numbers</li>
+            </ul>
+            <h4>Example of ordered list</h4>
+            <h5>Ordered list</h5>
+            <ol>
+                <li>first item</li>
+                <li>second item</li>
+                <li>third item</li>
+            </ol>
+        </details>
+       </div>
+        
+       <div class="media">
+        <details>
+            <summary>HTML Media</summary>
+            <h3>Value</h3>
+            <p>A MediaList object. It's value is set by the media attribute on the corresponding (link) or (style) element. If the media attribute is not set or empty, it returns an empty MediaList, i.e.,a MediaListwith the length property equal to 0 </p>
+            <p>Although the media property itself is read-only in the sense that you can't replace the MediaList object, you can still assign to its mediaText properly. You can also modify the MediaList object using the appendMedium() and deletMedium(). </p>
+            <h4>Media Video Example</h4>
+            <video controls width="290px"><source src="16390530_1920_1080_60fps.mp4"></video>
+        </details>
+       </div>
+        
+    </ul>
+    </div>
+    </div>
+    <span class="home"><a href="index.html">Go To Home Page</a></span>
+    
+</body>
+</html>
